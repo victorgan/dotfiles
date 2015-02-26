@@ -1,0 +1,3 @@
+[submodule "emacs.d/evil/evil"]
+	path = emacs.d/evil/evil
+	url = git://gitorious.org/evil/evil.git
