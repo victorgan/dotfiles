@@ -7,11 +7,18 @@ export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
 # Create symlinks for each file/folder
-files="bash_profile emacs emacs.d gitconfig gitignore_global vimrc vim"
+files="bashrc bash_profile emacs gitconfig gitignore_global vimrc"
 for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -sfv "$DOTFILES_DIR/$file" $HOME/.$file
 done
+
+## folders="emacs.d vim" #emacs folder not working..
+# folders="vim"
+# for folder in $folders; do
+#     echo "Creating symlink to $folder in home directory."
+#     ln -sfv "$DOTFILES_DIR/$folder" $HOME/.$folder
+# done
 
 # For making a symbolic link (ln):
 # -s, --symbolic    make symbolic links instead of hard links
