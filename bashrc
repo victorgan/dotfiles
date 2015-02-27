@@ -112,3 +112,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# ABOVE IS DEFAULT BASHRC
+
+# colors for vim
+export TERM=xterm-256color
+
+# Matlab alias
+alias matlab="/usr/local/MATLAB/R2014a/bin/matlab"
