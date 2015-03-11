@@ -14,7 +14,7 @@ for file in $files; do
 done
 
 ## folders="emacs.d vim" #emacs folder not working..
-# folders="vim"
+folders="vim"
 # for folder in $folders; do
 #     echo "Creating symlink to $folder in home directory."
 #     ln -sfv "$DOTFILES_DIR/$folder" $HOME/.$folder
