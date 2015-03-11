@@ -117,3 +117,6 @@ fi
 
 # colors for vim
 export TERM=xterm-256color
+
+# ROS: added for indigo
+source /opt/ros/indigo/setup.bash
