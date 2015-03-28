@@ -14,11 +14,11 @@ for file in $files; do
 done
 
 ## folders="emacs.d vim" #emacs folder not working..
-folders="vim"
-# for folder in $folders; do
-#     echo "Creating symlink to $folder in home directory."
-#     ln -sfv "$DOTFILES_DIR/$folder" $HOME/.$folder
-# done
+#folders="vim themes"
+#for folder in $folders; do
+#    echo "Creating symlink to $folder in home directory."
+#    ln -sfv "$DOTFILES_DIR/$folder" $HOME/.$folder
+#done
 
 # For making a symbolic link (ln):
 # -s, --symbolic    make symbolic links instead of hard links
