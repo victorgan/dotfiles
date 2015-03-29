@@ -119,4 +119,11 @@ fi
 export TERM=xterm-256color
 
 # ROS: added for indigo
-source /opt/ros/indigo/setup.bash
+if [ -f "/opt/ros/indigo/setup.bash" ] ; then
+    source /opt/ros/indigo/setup.bash
+fi
+
+# Local cabal (for haskell) install. If exists, use it.
+if [ -d "$HOME/.cabal/bin" ] ; then
+    PATH=$HOME/.cabal/bin:$PATH
+fi
